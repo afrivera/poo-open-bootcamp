@@ -1,5 +1,7 @@
 package poo.ejercicio3;
 
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -23,6 +25,49 @@ public class Main {
                 System.out.println("Fila -> " + i + " Columna -> " + numeros[i][j]);
             }
         }
+
+        System.out.println("-".repeat(50) + "\n");
+        // 3. Vector
+        Vector<String> apellidos = new Vector<>();
+        apellidos.add("Zapata");
+        apellidos.add("Rivera");
+        apellidos.add("Ruiz");
+        apellidos.add("Quiñonez");
+        apellidos.add("Muelas");
+
+        apellidos.remove(2);
+        apellidos.remove(3);
+
+        System.out.println("apellidos = " + apellidos);
+
+        System.out.println("-".repeat(50) + "\n");
+        // 4. R/
+
+
+        // 5. Array List
+        ArrayList<String> elementos = new ArrayList<>(Arrays.asList("ElementoA", "ElementoB", "ElementoC", "ElementoD"));
+        LinkedList<String> copiaElementos = new LinkedList<>(elementos);
+
+        for (int i = 0; i < elementos.size(); i++) {
+            System.out.println("Array ->" + elementos.get(i));
+        }
+        System.out.println();
+
+        for (int i = 0; i < elementos.size(); i++) {
+            System.out.println("Linked ->" + copiaElementos.get(i));
+        }
+
+        System.out.println("-".repeat(50) + "\n");
+        // 6. ArrayList de Enteros
+
+        ArrayList<Integer> numImpares = new ArrayList<>();
+
+        for (int i = 1; i <= 10; i++) {
+            if(i%2 != 0){
+                numImpares.add(i);
+            }
+        }
+        System.out.println("numImpares = " + numImpares);
     }
 
     public static String  reverse(String texto){
