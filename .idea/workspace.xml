@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1440313c-b30a-4854-81d5-d3bc1718acfa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/poo/ejercicio2/CocheCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/poo/ejercicio2/CocheCRUDImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/poo/ejercicio2/MainInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/poo/ejercicio3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +39,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MainInterface">
+  <component name="RunManager" selected="Application.poo.ejercicio3.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="poo.ejercicio1.Main" />
       <module name="ob-poo" />
@@ -69,8 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="poo.ejercicio3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo.ejercicio3.Main" />
+      <module name="ob-poo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poo.ejercicio3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.poo.ejercicio3.Main" />
         <item itemvalue="Application.MainInterface" />
         <item itemvalue="Application.Main" />
       </list>
@@ -85,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672777965372</updated>
       <workItem from="1672777966967" duration="4369000" />
-      <workItem from="1672787967200" duration="405000" />
+      <workItem from="1672787967200" duration="1350000" />
     </task>
     <servers />
   </component>
