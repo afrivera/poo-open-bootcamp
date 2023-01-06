@@ -68,6 +68,18 @@ public class Main {
             }
         }
         System.out.println("numImpares = " + numImpares);
+
+        System.out.println("-".repeat(50) + "\n");
+        // 7. Captura error divide por cero
+        try{
+            int resultadoDivision = dividePorCero(9,1);
+            System.out.println("Resultado division -> " + resultadoDivision);
+        }catch (ArithmeticException e){
+            System.out.println("Esto no puede hacerse");
+        }finally {
+            System.out.println("Demo de Código");
+        }
+
     }
 
     public static String  reverse(String texto){
@@ -77,5 +89,10 @@ public class Main {
         }
 
         return res;
+    }
+
+    // 7. DividePorCero
+    public static int dividePorCero(int num1, int num2)throws ArithmeticException{
+        return num1 / num2;
     }
 }
