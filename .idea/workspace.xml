@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1440313c-b30a-4854-81d5-d3bc1718acfa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/poo/ejercicio3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/poo/ejercicio3/Main.java" afterDir="false" />
     </list>
@@ -96,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672777965372</updated>
       <workItem from="1672777966967" duration="4369000" />
-      <workItem from="1672787967200" duration="3621000" />
+      <workItem from="1672787967200" duration="5563000" />
     </task>
     <servers />
   </component>

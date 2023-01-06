@@ -1,5 +1,6 @@
 package poo.ejercicio3;
 
+import java.io.*;
 import java.util.*;
 
 public class Main {
@@ -41,7 +42,10 @@ public class Main {
         System.out.println("apellidos = " + apellidos);
 
         System.out.println("-".repeat(50) + "\n");
-        // 4. R/
+        /*
+        Indica cuál es el problema de utilizar un Vector con la capacidad por defecto si tuviésemos 1000 elementos para ser añadidos al mismo.
+         */
+        // 4. R/ El problema es que al sobrepasar la capacidad se crea un array nuevo y copia el anterior el cual se vuelve un costo de memoria my caro.
 
 
         // 5. Array List
@@ -80,6 +84,20 @@ public class Main {
             System.out.println("Demo de Código");
         }
 
+        System.out.println("-".repeat(50) + "\n");
+        // 8. Leer Archivo y copiarlo a otro
+
+        try {
+            InputStream in = new FileInputStream("file.txt");
+            PrintStream out = new PrintStream("salida.txt");
+
+            copiaFichero(out, in);
+        } catch (FileNotFoundException e) {
+            System.out.println("No se pudo leer el fichero");
+        }
+
+
+
     }
 
     public static String  reverse(String texto){
@@ -94,5 +112,19 @@ public class Main {
     // 7. DividePorCero
     public static int dividePorCero(int num1, int num2)throws ArithmeticException{
         return num1 / num2;
+    }
+
+    public static void copiaFichero(PrintStream copia, InputStream fichero){
+
+        try {
+            byte[] ficheroBuffer = fichero.readAllBytes();
+
+            copia.write(ficheroBuffer);
+            fichero.close();
+            copia.close();
+
+        } catch (IOException e) {
+            System.out.println("No se pudo leer el ficheroo");
+        }
     }
 }
